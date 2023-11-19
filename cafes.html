@@ -122,7 +122,7 @@
     .then(data => {
   
   
-     if (localStorage.getItem("User") == "Admin"){
+     if (localStorage.getItem("username") == "admins"){
   
       // fill cafes
   
@@ -220,7 +220,7 @@
 }
 
 
-let checkLogin = localStorage.getItem("User");
+let checkLogin = localStorage.getItem("username");
 
 if(checkLogin == null){
   window.location.href="register.html";
@@ -232,7 +232,7 @@ if(checkLogin == null){
 
 
 function logOut(){
-  localStorage.removeItem("User");
+  localStorage.removeItem("username");
 }
 
   </script>
