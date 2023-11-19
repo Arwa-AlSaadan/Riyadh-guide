@@ -246,7 +246,7 @@ fetch(`https://65562d2d84b36e3a431f4985.mockapi.io/riyadhGuide`, {method: 'GET',
   .then(data => {
 
 
-   if (localStorage.getItem("User") == "Admin"){
+   if (localStorage.getItem("username") == "Admins"){
 
 
     // fill touristicPlaces
@@ -603,7 +603,7 @@ function openPage(placeName) {
 
 
 function logOut(){
-  localStorage.removeItem("User");
+  localStorage.removeItem("username");
 }
 
 
